@@ -3,6 +3,7 @@
 :root {
 	--prime-color: #58a9a5;
 	--hover-border: #fec62d;
+	--prime-header-color: #1c2323;
 	--prime-text-color: #404242;
 }
 
@@ -16,7 +17,7 @@
 }
 
 .header {
-	border: 1px solid black;
+	margin-top: 30px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -71,4 +72,17 @@
 
 .header .btn_SU:hover {
 	background-color: #488c89;
+}
+
+.main__section {
+	border: 1px solid red;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 200px;
+}
+
+.main__section .section__img {
+	z-index: 1;
 }
