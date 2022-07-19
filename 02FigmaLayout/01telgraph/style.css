@@ -2,6 +2,7 @@
 
 :root {
 	--primary-color: #ff0043;
+	--primary-text-color: #00194a;
 }
 
 * {
@@ -50,3 +51,47 @@
 }
 
 /* MAIN */
+
+/* .main{} */
+
+.main__section0 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main .main__section0 .section0__header {
+	color: var(--primary-text-color);
+	font-weight: 500;
+	font-size: 60px;
+	line-height: 85px;
+}
+
+.main .main__section0 .section0__p {
+	color: var(--primary-text-color);
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	mix-blend-mode: normal;
+	opacity: 0.8;
+}
+
+.main .main__section0 .section0__btn {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 19px;
+	background: var(--primary-color);
+	box-shadow: 0px 5px 50px rgba(255, 0, 67, 0.1);
+	border-radius: 30px;
+	width: 275px;
+	height: 60px;
+	border: none;
+	text-align: center;
+	margin-top: 50px;
+	transition: 0.3s;
+}
+
+.main .main__section0 .section0__btn:hover {
+	color: white;
+	background: #000000;
+}
