@@ -24,6 +24,7 @@
 	width: 1680px;
 	height: 1050px;
 	background: #ffffff;
+	margin: 0 auto;
 }
 
 /* Header */
@@ -37,7 +38,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* position: sticky; 
+	/* position: sticky;
 	background: rgba(255, 255, 255, 0.2);
 	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 	backdrop-filter: blur(5.5px);
@@ -220,26 +221,39 @@
 }
 
 /* Absolute position links */
-/* 
-.container .main .absolute__container {
-	margin-bottom: 10px;
-} */
 
-.container .main .absolute__container .main__links {
+.container .main .absolute__container {
+	position: relative;
+}
+
+/* .container .main .absolute__container .main__links {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
 	font-size: 25px;
 	justify-content: space-around;
 	height: 350px;
-	left: 1px;
-	bottom: 90px;
 	margin-left: 25px;
+	right: 1500px;
+	z-index: 1;
+	bottom: -500px;
+} */
+
+.container .main .absolute__container .main__links {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	font-size: 25px;
+	justify-content: space-around;
+	height: 350px;
+	z-index: 1;
+	margin-left: 25px;
+	left: 1px;
+	bottom: 100px;
 }
 
 .container .main .absolute__container .main__links a {
 	color: #000000;
-	position: sticky;
 	transition: 0.3s;
 }
 
@@ -288,13 +302,24 @@
 
 /* MAIN LINKS HOVER END */
 
-.container .main .absolute__container .main__email a {
+/* .container .main .absolute__container .main__email a {
 	position: absolute;
 	font-size: 17px;
 	font-weight: 600;
-	bottom: 100px;
+	bottom: -450px;
 	color: #000000;
 	writing-mode: vertical-lr;
+	z-index: 1;
+} */
+
+.container .main .absolute__container .main__email a {
+	position: fixed;
+	font-size: 17px;
+	font-weight: 600;
+	bottom: 130px;
+	color: #000000;
+	writing-mode: vertical-lr;
+	z-index: 1;
 }
 
 .container .main .absolute__container .main__email a span {
@@ -303,9 +328,10 @@
 }
 
 .container .main__section2 {
-	width: 1200px;
-	height: 80px;
 	margin: 10px auto;
+	width: 1000px;
+	height: 80px;
+	padding-left: 30px;
 }
 
 .container .main__section2 .section2__header {
@@ -314,8 +340,13 @@
 	margin: 0 0 37px 25px;
 }
 
+/* .container .main__section2 .section2__header::after {
+	content: "";
+	border-bottom: 2px solid black;
+} */
+
 /* Smthg WRONG */
-.container .main__section2 .section2__header::after {
+/* .container .main__section2 .section2__header::after {
 	content: "";
 	position: absolute;
 	background: #000;
@@ -324,7 +355,7 @@
 	bottom: 70px;
 	right: 730px;
 	transition: 0.3s;
-}
+} */
 
 .container .main__section2 .section2__header strong {
 	font-weight: 700;
@@ -338,6 +369,35 @@
 }
 
 .container .main__section2 .section2__hr {
-	width: 50%;
-	margin: 5px 20px 10px 40px;
+	width: 40%;
+	margin: 50px auto;
 }
+
+.container .main__section2 .vector-hand {
+	position: absolute;
+	left: 1px;
+	top: 800px;
+	width: 400px;
+}
+
+.container .main__section2 .vector-yellow {
+	position: absolute;
+	left: 140px;
+	top: 1300px;
+}
+
+.container .main__section2 .vector-gray {
+	position: absolute;
+	right: 200px;
+	top: 1290px;
+}
+
+.container .main__section2 .vector-yellow-big {
+	position: absolute;
+	right: 1px;
+	top: 600px;
+	width: 460px;
+}
+
+/* Position Absolute  */
+/* Position Relative */
