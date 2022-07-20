@@ -30,6 +30,14 @@
 	font-weight: 700;
 	font-size: 20px;
 	color: var(--primary-color);
+	transition: 0.3s;
+}
+
+.header .header__h1:hover {
+	height: 23px;
+	font-weight: 700;
+	font-size: 20px;
+	color: black;
 }
 
 .header .header__btn {
@@ -100,7 +108,7 @@
 
 .main .main__section1 {
 	width: 1440px;
-	margin: 50px auto;
+	margin: 20px 75px;
 	height: 272px;
 	display: flex;
 	justify-content: space-around;
@@ -122,6 +130,16 @@
 .section1__ios i,
 .section1__pc i {
 	color: var(--primary-color);
+	width: 40px;
+	height: 48px;
+	font-size: 40px;
+	transition: 0.3s;
+}
+
+.main .main__section1 .section1__android i:hover,
+.section1__ios i:hover,
+.section1__pc i:hover {
+	color: black;
 	width: 40px;
 	height: 48px;
 	font-size: 40px;
