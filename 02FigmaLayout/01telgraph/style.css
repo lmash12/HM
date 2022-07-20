@@ -95,3 +95,84 @@
 	color: white;
 	background: #000000;
 }
+
+/* ANDROID IOS PC SECTION */
+
+.main .main__section1 {
+	width: 1440px;
+	margin: 50px auto;
+	height: 272px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.main .main__section1 .section1__android,
+.section1__ios,
+.section1__pc {
+	padding: 15px;
+	width: 400px;
+	height: 315px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
+	border-radius: 10px;
+}
+
+.main .main__section1 .section1__android i,
+.section1__ios i,
+.section1__pc i {
+	color: var(--primary-color);
+	width: 40px;
+	height: 48px;
+	font-size: 40px;
+}
+
+.main .main__section1 .section1__android .android__header,
+.ios__header,
+.pc__header {
+	margin-top: 20px;
+	color: var(--primary-text-color);
+	font-weight: 500;
+	line-height: 25px;
+	font-size: 22px;
+}
+
+.main .main__section1 .section1__android .android__p,
+.ios__p,
+.pc__p {
+	margin-top: 15px;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 26px;
+	color: var(--primary-text-color);
+	mix-blend-mode: normal;
+	opacity: 0.8;
+}
+
+.main .main__section1 .section1__download {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.main .main__section1 .section1__link {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+	color: var(--primary-text-color);
+	mix-blend-mode: normal;
+	opacity: 50%;
+	transition: 0.3s;
+}
+
+.main .main__section1 .section1__link:hover {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 18px;
+	text-decoration: underline;
+	color: black;
+	mix-blend-mode: normal;
+	opacity: 80%;
+}
