@@ -5,12 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio</title>
-		<link rel="stylesheet" href="/styledark.css" />
-		<!-- <link rel="stylesheet" href="/style.css" /> -->
+		<!-- <link rel="stylesheet" href="/styledark.css" /> -->
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="/style.css"
+			media="all"
+			id="theme_css"
+		/>
 		<script
 			src="https://kit.fontawesome.com/702807384b.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="/main.js" defer></script>
 	</head>
 	<body>
 		<div class="container">
@@ -18,7 +25,7 @@
 			<header class="header">
 				<div class="logo">
 					<!-- <img class="logo__img" src="/img/Logo.png" alt="logo" /> LIGHT THEME -->
-					<img class="logo__img" src="/img/Logo-Dark.png" alt="logo" />
+					<img id="logoImg" class="logo__img" src="/img/Logo.png" alt="logo" />
 					<h1 class="header__logo">Anish Kumar Sinha</h1>
 				</div>
 				<nav class="nav">
@@ -32,8 +39,15 @@
 					</ul>
 					<button class="theme__change">
 						<!-- Add class theme__change to img for glassmorphism header -->
-						<!-- <img src="/img/MoonSVG.svg" alt="change__theme__btn" /> LIGHT THEME -->
-						<img src="/img/Moon-Dark.png" alt="change__theme__btn" />
+						<button id="btnTheme">
+							<img
+								id="themeIcon"
+								src="/img/Moon.png"
+								alt="change__theme__btn"
+							/>
+						</button>
+						<!--LIGHT THEME-->
+						<!-- <img src="/img/Moon-Dark.png" alt="change__theme__btn" /> -->
 					</button>
 				</nav>
 			</header>

@@ -89,7 +89,7 @@
 	padding: 0 10px;
 }
 
-.container .header .theme__change {
+.container .header button {
 	margin-left: 74px;
 	border: none;
 	cursor: pointer;
