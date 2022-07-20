@@ -20,15 +20,18 @@
 	font-family: "Segoe UI", sans-serif;
 }
 
+body {
+	background: #151515;
+}
+
 .container {
 	width: 1680px;
-	height: 1050px;
-	background: #ffffff;
+	height: 1250px;
+	background: #151515;
 	margin: 0 auto;
 }
 
-/* Header */
-
+/* HEADER */
 .container .header {
 	width: 1499px;
 	height: 40px;
@@ -52,9 +55,9 @@
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	color: #ffffff;
 }
 
-/* logo__img can be used /wOut hover (will be spin and return to start position) */
 .container .header .logo .logo__img:hover {
 	transform: rotate(0);
 	transition: 0.2s;
@@ -66,7 +69,6 @@
 
 .container .header .logo .logo__header {
 	font-size: var(--prime-font-size);
-	color: var(--prime-color);
 	font-weight: 700;
 	line-height: 33.25px;
 }
@@ -83,7 +85,7 @@
 
 .container .header .nav ul li a {
 	font-size: var(--prime-nav-size);
-	color: var(--prime-color);
+	color: #ffffff;
 	line-height: 26.6px;
 	font-weight: 600;
 	padding: 0 10px;
@@ -93,10 +95,11 @@
 	margin-left: 74px;
 	border: none;
 	cursor: pointer;
-	background: #ffffff; /* REMOVE FOR GLASSMORPHISM HEADER */
+	/* background: #ffffff; REMOVE FOR GLASSMORPHISM HEADER */
+	background: #151515;
 }
 
-/* Main */
+/* MAIN */
 
 .container .main {
 	margin: 10px 84px 10px 112px;
@@ -104,11 +107,6 @@
 	align-items: center;
 	justify-content: space-around;
 }
-/* 
-.container .main .main__section0 {
-	border: 1px solid red;
-	margin: 0;
-} */
 
 .container .main .main__section0 .section0__hello {
 	width: 191px;
@@ -130,16 +128,17 @@
 	font-weight: 600;
 	font-size: 64px;
 	line-height: 85.13px;
+	color: #ffffff;
 }
 
 .container .main .main__section0 .section0__header span {
 	color: #737373;
-	text-decoration: black solid underline;
+	text-decoration: #ffffff solid underline;
 	transition: 0.5s;
 }
 
 .container .main .main__section0 .section0__header span:hover {
-	color: #000000;
+	color: #ffffff;
 	text-decoration: #737373 solid underline;
 }
 
@@ -147,7 +146,7 @@
 	font-weight: 300;
 	font-size: 30px;
 	line-height: 39.9px;
-	color: var(--prime-color);
+	color: #ffffff;
 	margin-top: 7px;
 }
 
@@ -188,8 +187,6 @@
 	padding: 90px;
 }
 
-/* Absolute position links */
-
 .container .main .absolute__container {
 	position: relative;
 }
@@ -221,7 +218,7 @@
 }
 
 .container .main .absolute__container .main__links a {
-	color: #000000;
+	color: #ffffff;
 	transition: 0.3s;
 }
 
@@ -249,7 +246,7 @@
 }
 
 .container .main .absolute__container .main__links .git:hover {
-	color: var(--prime-git-color);
+	color: #ffffff;
 }
 
 .container .main .absolute__container .main__links .linkn:hover {
@@ -262,8 +259,8 @@
 
 .container .main .absolute__container .main__links .tt:hover {
 	/* color: var(--prime-tt-color); */
-	color: black;
-	text-shadow: -6px 0 #69c9d0, 0 2px #ffffff, 6px 0 #ee1d52;
+	color: #ffffff;
+	text-shadow: -6px 0 #69c9d0, 0 2px #000000, 6px 0 #ee1d52;
 	/* text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
 		-1px -1px #fff, 1px -1px #fff, -1px 1px #fff;  Stackoverflow template*/
 }
@@ -285,7 +282,7 @@
 	font-size: 17px;
 	font-weight: 600;
 	bottom: 130px;
-	color: #000000;
+	color: #ffffff;
 	writing-mode: vertical-lr;
 	z-index: 1;
 }
@@ -306,24 +303,8 @@
 	font-weight: 500;
 	font-size: 64px;
 	margin: 0 0 37px 25px;
+	color: #ffffff;
 }
-
-/* .container .main__section2 .section2__header::after {
-	content: "";
-	border-bottom: 2px solid black;
-} */
-
-/* Smthg WRONG */
-/* .container .main__section2 .section2__header::after {
-	content: "";
-	position: absolute;
-	background: #000;
-	height: 3px;
-	width: 20%;
-	bottom: 70px;
-	right: 730px;
-	transition: 0.3s;
-} */
 
 .container .main__section2 .section2__header strong {
 	font-weight: 700;
@@ -332,7 +313,7 @@
 .container .main__section2 .section2__p {
 	font-weight: 300;
 	font-size: 20px;
-	color: #000000;
+	color: #ffffff;
 	margin: 25px;
 }
 
