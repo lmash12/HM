@@ -23,7 +23,6 @@
 .container {
 	width: 1680px;
 	height: 1050px;
-	background: #ffffff;
 	margin: 0 auto;
 }
 
@@ -346,18 +345,22 @@
 	left: 1px;
 	top: 800px;
 	width: 400px;
+	z-index: -1;
 }
 
 .container .main__section2 .vector-yellow {
 	position: absolute;
 	left: 140px;
 	top: 1300px;
+	z-index: -1;
+	/* Bottom */
 }
 
 .container .main__section2 .vector-gray {
 	position: absolute;
 	right: 200px;
 	top: 1290px;
+	z-index: -1;
 }
 
 .container .main__section2 .vector-yellow-big {
@@ -365,6 +368,7 @@
 	right: 1px;
 	top: 600px;
 	width: 460px;
+	z-index: -1;
 }
 
 /* Position Absolute  */
