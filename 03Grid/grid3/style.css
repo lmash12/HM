@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: sans-serif;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 200px 250px;
+	border: 1px solid black;
+	margin: 10px 40px;
+	background: black;
+	color: white;
+}
+
+.grid-item {
+	font-size: 22px;
+	font-weight: bold;
+	border: 1px solid white;
+	padding: 20px;
+}
