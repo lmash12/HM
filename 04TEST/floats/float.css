@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	background: tomato;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-align: center;
+	border: 5px solid black;
+	color: white;
+
+	float: left;
+}
+
+p {
+	clear: both;
+}
