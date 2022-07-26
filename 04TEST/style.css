@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
 	margin: 0;
 	padding: 0;
@@ -218,6 +218,48 @@ hr {
 	gap: 15px;
 }
 
+/* Percentage */
+.percentage {
+	background: #ffffff;
+}
+
+.percentage .percentage__text {
+	color: #3c4761;
+	text-align: center;
+	padding: 110px 0 0 0;
+}
+
+.percentage .percentage__text h2 {
+	padding: 0 0 10px 0;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 60px;
+}
+
+.percentage .percentage__text p {
+	padding: 25px 0 0 0;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.percentage .percentage__container {
+	padding: 80px 0 110px 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	text-align: center;
+}
+
+.percentage .percentage__container h3 {
+	padding: 25px 0 0 0;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	color: #3c4761;
+	text-transform: uppercase;
+}
+
 /* Yellow */
 .yellow__section {
 	background: #ffdd99;
@@ -233,6 +275,8 @@ hr {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 60px;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .yellow__section .yellow__text p {
@@ -307,4 +351,179 @@ hr {
 	font-size: 14px;
 }
 
+/* Strawberry */
+.strawberry {
+	background: #d74680;
+}
+
+.strawberry .strawberry__text {
+	text-align: center;
+	padding: 110px 0 0 0;
+	color: white;
+}
+
+.strawberry .strawberry__text h2 {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 60px;
+	padding: 0 0 5px;
+	text-transform: uppercase;
+}
+
+.strawberry .strawberry__text p {
+	padding: 20px 0 80px 0;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.strawberry .strawberry__container {
+	padding: 0 0 110px 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	gap: 110px 90px;
+}
+
+.strawberry .strawberry__container img {
+	float: left;
+	padding: 0 50px 0 0;
+}
+
+.strawberry .strawberry__container p {
+	font-weight: 400;
+	font-style: italic;
+	font-size: 21px;
+	line-height: 32px;
+	color: #ffffff;
+	padding: 0 0 32px 0;
+}
+
+.strawberry .strawberry__container h3 {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	text-transform: uppercase;
+	padding: 0 0 0 150px;
+}
+
+.strawberry .strawberry__container span {
+	color: #ffdd99;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	font-family: "Roboto", sans-serif;
+	padding: 0 0 0 150px;
+}
+
+/* Blue */
+.section__blue {
+	background: #3c5499;
+}
+
+.section__blue .blue__text {
+	color: #ffffff;
+	padding: 110px 0 72px 0;
+	text-align: center;
+}
+
+.section__blue .blue__text h2 {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 60px;
+}
+
+.section__blue .blue__text p {
+	padding: 15px 0 0 0;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.section__blue .blue__form {
+	display: grid;
+	grid-template-columns: repeat(2, 400px);
+	grid-template-rows: repeat(2, 56px);
+	gap: 35px 30px;
+	justify-content: center;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.item3 {
+	grid-column: span 2;
+	background: #273a71;
+	padding: 10px;
+	height: 100px;
+	border: none;
+	color: #ffffff;
+}
+
+.item4 {
+	grid-column: span 2;
+	width: 50%;
+	margin: 60px auto 115px auto;
+	grid-column: span 2;
+	justify-self: center;
+	background: #30bae7;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	width: 300px;
+	height: 70px;
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.2s;
+}
+
+.item4:hover {
+	box-shadow: 5px 5px 5px black;
+	font-size: 14px;
+}
+
+::placeholder {
+	color: white;
+	opacity: 0.6;
+}
+
+.section__blue .blue__form input {
+	background: #273a71;
+	padding: 10px;
+	border: none;
+	color: white;
+}
+
+/* footer */
+.footer {
+	background: #344b8e;
+}
+
+.footer .footer__nav {
+	padding: 40px 0 40px 0;
+}
+
+.footer .footer__nav ul {
+	display: flex;
+	gap: 0 60px;
+	justify-content: center;
+}
+
+.footer .footer__nav ul li a {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	color: #ffffff;
+	transition: 0.3s;
+}
+
+.footer .footer__nav ul li a:hover {
+	color: #30bae7;
+}
 /* Media */
