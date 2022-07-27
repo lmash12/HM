@@ -235,6 +235,7 @@ hr {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 60px;
+	text-transform: uppercase;
 }
 
 .percentage .percentage__text p {
@@ -435,6 +436,7 @@ hr {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 60px;
+	text-transform: uppercase;
 }
 
 .section__blue .blue__text p {
