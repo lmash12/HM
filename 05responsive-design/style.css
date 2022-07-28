@@ -4,4 +4,37 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style-type: none;
+	font-family: sans-serif;
+}
+
+div {
+	padding: 10px 0 10px 0;
+	margin: 0 auto;
+	text-align: center;
+	border: 2px solid gray;
+	background: tomato;
+	color: white;
+}
+
+.menu {
+	width: 25%;
+	float: left;
+}
+
+.main {
+	text-align: center;
+	width: 75%;
+	float: left;
+	border: 2px solid gray;
+	background: tomato;
+	color: white;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 3fr; /* same 25% 75% 1/4 25%*/
+}
+
+.grid-item {
+	width: 100%;
 }
