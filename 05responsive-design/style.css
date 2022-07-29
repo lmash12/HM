@@ -413,4 +413,45 @@ p {
 	.projects__container div a {
 		font-size: 18px;
 	}
+
+	/* Contact Mobile */
+	.contact {
+		padding: 100px 30px;
+	}
+
+	.contact__flex {
+		flex-direction: column;
+		gap: 70px;
+	}
+
+	.contact__flex img {
+		width: 90%;
+	}
+
+	.contact__form input {
+		margin: 0 0 20px 0;
+		font-size: 15px;
+		width: 300px;
+	}
+
+	.contact__form textarea {
+		margin: 0 0 20px 0;
+		font-size: 15px;
+		width: 300px;
+	}
+
+	.contact__form button {
+		margin: 0 0 20px 0;
+		font-weight: 300;
+		font-size: 22px;
+		width: 300px;
+	}
+
+	.contact__form button img {
+		width: 30px;
+	}
+
+	.contact__form button:hover {
+		box-shadow: 10px 10px 10px black;
+	}
 }
