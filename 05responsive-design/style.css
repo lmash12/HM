@@ -181,6 +181,10 @@ p {
 	text-align: center;
 }
 
+.projects__container div img {
+	width: 100%;
+}
+
 .projects__container div p {
 	width: 365px;
 	height: 165px;
@@ -307,5 +311,43 @@ p {
 
 	.skills__text img {
 		padding: 0 20px;
+	}
+
+	/* Projects Mobile */
+	.projects {
+		padding: 100px 30px;
+	}
+
+	.projects__header img {
+		width: 40px;
+	}
+
+	.projects p {
+		padding: 14px 0 45px 30px;
+	}
+
+	.projects__container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.projects__container div {
+		width: 275px;
+		height: 320px;
+		border: 5px solid transparent;
+		border-image: linear-gradient(to right, #0d54be, #20ecd3);
+		border-image-slice: 1;
+		text-align: center;
+		margin: 10px 0 0 0;
+	}
+
+	.projects__container div p {
+		width: 252px;
+		height: 80px;
+		font-size: 18px;
+	}
+
+	.projects__container div a {
+		font-size: 18px;
 	}
 }
