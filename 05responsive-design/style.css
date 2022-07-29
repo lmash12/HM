@@ -19,6 +19,8 @@ h3 {
 	color: #f37a7a;
 	font-weight: 600;
 	font-size: 40px;
+	text-align: center;
+	padding: 0 0 65px 0;
 }
 
 p {
@@ -117,7 +119,31 @@ p {
 }
 
 /* Skills */
+.skills {
+	padding: 0 0 70px 0;
+}
 
+.skills__flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills__text {
+	width: 690px;
+	height: 475px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	row-gap: 20px;
+}
+
+.skills__text p {
+	grid-column: 1 / 4;
+}
+
+.skills__text img {
+	padding: 0 0 0 40px;
+}
 /* MEDIA */
 
 @media (max-width: 1200px) {
