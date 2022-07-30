@@ -264,6 +264,47 @@ p {
 	box-shadow: 10px 10px 10px black;
 }
 
+/* Footer */
+.footer {
+	background: #4f47c8;
+}
+
+.footer__flex {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px;
+}
+
+.footer__flex p {
+	padding: 0 0 35px 35px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 35px;
+}
+
+.footer__links img {
+	margin: 0 35px;
+}
+
+.footer__git a {
+	color: #0acbbf;
+	font-size: 35px;
+	font-weight: 400;
+	vertical-align: center;
+}
+
+.footer__git span {
+	color: #fff;
+	font-size: 35px;
+	font-weight: 400;
+}
+
+.footer__gitl {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
 /* MEDIA */
 @media (max-width: 1200px) {
 	.container {
