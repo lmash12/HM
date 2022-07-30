@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.container {
+	max-width: 1500px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+h3 {
+	color: #f37a7a;
+	font-weight: 600;
+	font-size: 40px;
+	text-align: center;
+	padding: 0 0 65px 0;
+}
+
+p {
+	font-weight: 300;
+	font-size: 35px;
+	color: #818080;
+}
+
+/* Header */
+.header {
+	padding: 120px 90px;
+}
+
+.header .header__flex {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.header .header__text {
+	width: 630px;
+	height: 440px;
+}
+
+.header .header__text h2 {
+	color: #3a3a3a;
+	font-weight: 600;
+	font-size: 50px;
+	padding: 0 0 40px 0;
+}
+
+.header .header__text p {
+	padding: 0 0 40px 0;
+}
+
+.header .header__text button {
+	color: #fff;
+	font-weight: 400;
+	font-size: 35px;
+	background: #e84949;
+	padding: 10px 24px;
+	border: none;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.header .header__text button:hover {
+	box-shadow: 10px 10px 10px black;
+}
+
+.header .header__img {
+	position: relative;
+	padding: 70px;
+}
+
+.header .header__img .desktop {
+	position: absolute;
+}
+
+.header .header__img img:nth-of-type(1) {
+	width: 100%;
+}
+
+/* CIRCLE */
+.header .header__img img:nth-of-type(2) {
+	bottom: 0;
+	right: 60px;
+}
+
+/* CUBE */
+.header .header__img img:nth-of-type(3) {
+	top: 5px;
+	right: 70px;
+}
+
+/* PLUS */
+.header .header__img img:nth-of-type(4) {
+	top: 15px;
+	left: 220px;
+}
+
+/* ELLIPSE */
+.header .header__img img:nth-of-type(5) {
+	bottom: 0;
+	left: 10px;
+}
+
+/* ZigZag */
+.header .header__img img:nth-of-type(6) {
+	left: 0px;
+	top: 30px;
+}
+
+.header .header__img .mobile {
+	display: none;
+}
+
+/* Skills */
+.skills {
+	padding: 0 0 70px 0;
+}
+
+.skills__flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills__text {
+	width: 690px;
+	height: 475px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	row-gap: 20px;
+}
+
+.skills__text p {
+	grid-column: 1 / 4;
+}
+
+.skills__text img {
+	padding: 0 0 0 40px;
+}
+
+.skills__img img {
+	width: 100%;
+	text-align: center;
+}
+
+/* Projects */
+.projects {
+	padding: 70px 90px 100px 90px;
+}
+
+.projects__header {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.projects p {
+	text-align: center;
+	padding: 0 0 60px 0;
+}
+
+.projects__container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.projects__container div {
+	width: 400px;
+	height: 505px;
+	border: 10px solid transparent;
+	border-image: linear-gradient(to right, #0d54be, #20ecd3);
+	border-image-slice: 1;
+	text-align: center;
+}
+
+.projects__container div img {
+	width: 100%;
+}
+
+.projects__container div p {
+	width: 365px;
+	height: 165px;
+	vertical-align: center;
+	text-align: center;
+	font-size: 30px;
+	padding: 5px;
+}
+
+.projects__container div a {
+	text-align: center;
+	color: #0571ad;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+/* Contact me */
+.contact {
+	padding: 110px 90px 100px 90px;
+}
+
+.contact__flex {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.contact__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__form input {
+	margin: 0 0 50px 0;
+	text-decoration: underline;
+	color: #838383;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 10px 0 2px 5px;
+	width: 400px;
+	text-align: left;
+	border: 3px solid gray;
+	border-radius: 5px;
+}
+
+.contact__form textarea {
+	margin: 0 0 50px 0;
+	text-decoration: underline;
+	color: #838383;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 10px 0 2px 5px;
+	width: 400px;
+	text-align: left;
+	border: 3px solid gray;
+	border-radius: 5px;
+}
+
+.contact__form button {
+	margin: 0 0 50px 0;
+	text-align: center;
+	background: #6860e2;
+	border-radius: 4px;
+	color: #fffdfd;
+	font-weight: 300;
+	font-size: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	transition: 0.3s;
+}
+
+.contact__form button:hover {
+	box-shadow: 10px 10px 10px black;
+}
+
+/* Footer */
+.footer {
+	background: #4f47c8;
+}
+
+.footer__flex {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px;
+}
+
+.footer__flex p {
+	padding: 0 0 35px 35px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 35px;
+}
+
+.footer__links img {
+	margin: 0 35px;
+}
+
+.footer__git a {
+	color: #0acbbf;
+	font-size: 35px;
+	font-weight: 400;
+	vertical-align: center;
+}
+
+.footer__git span {
+	color: #fff;
+	font-size: 35px;
+	font-weight: 400;
+}
+
+.footer__gitl {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.footer__gitl_mobile {
+	display: none;
+}
+
+/* MEDIA */
+@media (max-width: 1200px) {
+	.container {
+		width: 360px;
+		padding: 0px 15px;
+		margin: 0 auto;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+
+	/* Header Mobile */
+	.header {
+		padding: 90px 30px;
+	}
+
+	.header .header__flex {
+		flex-direction: column-reverse;
+		gap: 20px;
+	}
+
+	.header .header__text {
+		text-align: center;
+		width: 300px;
+		height: 260px;
+	}
+
+	.header .header__text h2 {
+		font-size: 32px;
+	}
+
+	.header .header__text button {
+		font-size: 18px;
+	}
+
+	.header .header__img {
+		padding: 40px;
+	}
+
+	.header .header__img .desktop {
+		display: none;
+	}
+
+	.header .header__img .mobile {
+		display: block;
+		position: absolute;
+	}
+
+	/* Circle Mobile */
+	.header .header__img img:nth-of-type(7) {
+		right: 40px;
+		bottom: 10px;
+	}
+
+	/* Cube Mobile */
+	.header .header__img img:nth-of-type(8) {
+		top: 10px;
+		right: 60px;
+	}
+
+	/* Plus Mobile */
+	.header .header__img img:nth-of-type(9) {
+		top: 10px;
+		left: 120px;
+	}
+
+	/* Ellipse Mobile */
+	.header .header__img img:nth-of-type(10) {
+		bottom: 20px;
+		left: 10px;
+	}
+
+	/* Zigzag Mobile */
+	.header .header__img img:nth-of-type(11) {
+		top: 10px;
+		left: 10px;
+	}
+
+	/* Skills Mobile */
+	.skills {
+		padding: 50px 25px 100px 25px;
+	}
+
+	.skills__flex {
+		flex-direction: column-reverse;
+	}
+
+	.skills__text {
+		width: auto;
+		height: auto;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.skills__text p {
+		grid-column: 1 / 3;
+		text-align: center;
+		padding: 10px 0 0 0;
+	}
+
+	.skills__text img {
+		padding: 0 20px;
+	}
+
+	/* Projects Mobile */
+	.projects {
+		padding: 100px 30px;
+	}
+
+	.projects__header img {
+		width: 40px;
+	}
+
+	.projects p {
+		padding: 14px 0 45px 30px;
+	}
+
+	.projects__container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.projects__container div {
+		width: 275px;
+		height: 320px;
+		border: 5px solid transparent;
+		border-image: linear-gradient(to right, #0d54be, #20ecd3);
+		border-image-slice: 1;
+		text-align: center;
+		margin: 10px 0 0 0;
+	}
+
+	.projects__container div p {
+		width: 252px;
+		height: 80px;
+		font-size: 18px;
+	}
+
+	.projects__container div a {
+		font-size: 18px;
+	}
+
+	/* Contact Mobile */
+	.contact {
+		padding: 100px 30px;
+	}
+
+	.contact__flex {
+		flex-direction: column;
+		gap: 70px;
+	}
+
+	.contact__flex img {
+		width: 90%;
+	}
+
+	.contact__form input {
+		margin: 0 0 20px 0;
+		font-size: 15px;
+		width: 300px;
+	}
+
+	.contact__form textarea {
+		margin: 0 0 20px 0;
+		font-size: 15px;
+		width: 300px;
+	}
+
+	.contact__form button {
+		margin: 0 0 20px 0;
+		font-weight: 300;
+		font-size: 22px;
+		width: 300px;
+	}
+
+	.contact__form button img {
+		width: 30px;
+	}
+
+	.contact__form button:hover {
+		box-shadow: 10px 10px 10px black;
+	}
+
+	/* Footer Mobile */
+	.footer__flex {
+		flex-direction: column;
+	}
+
+	.footer__flex img {
+		width: 35px;
+	}
+
+	.footer__flex p {
+		padding: 0 0 25px 35px;
+		font-size: 25px;
+	}
+
+	.footer__links {
+		display: grid;
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
+		justify-content: center;
+	}
+
+	.footer__links p {
+		grid-column: 1 / 5;
+	}
+
+	.footer__links img {
+		margin: 0 25px;
+	}
+
+	.footer__git {
+		display: grid;
+		grid-template-columns: repeat(3, 120px);
+		justify-content: center;
+	}
+
+	.footer__git p {
+		grid-column: 1 / 4;
+		justify-self: center;
+	}
+
+	.footer__gitl {
+		grid-column: 1 / 4;
+		justify-self: center;
+	}
+
+	.footer__gitl a {
+		font-size: 15px;
+	}
+
+	.footer__gitl span {
+		font-size: 15px;
+	}
+}
