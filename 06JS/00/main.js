@@ -1,20 +1,21 @@
 "use strict";
 
+// Many variables
 let user = 'Islom', age = 25, message = 'Hello';
 console.log(user)
 console.log(age)
 console.log(message)
 
+// Refresh variable
 let greeter;
 greeter = 'Hello';
 greeter = 'World!';
 console.log(greeter)
 
+// Variable = Variable
 let hello = 'Hello World!';
 let message1;
-
 message1 = hello;
-
 
 let admin;
 let name;
@@ -22,28 +23,20 @@ name = 'John';
 admin = name;
 console.log(admin);
 
-let earth;
-let currentUserName;
-
-const birthday = '18.04.1982';
-
-console.log(1/0)
+// False
+console.log(1 / 0) 
 console.log(NaN);
 console.log(Infinity);
-
 console.log("string" / 2);
 
 
+// Bat tick
 let firstName = "Islom";
 let secondName = "Sattorov";
 let greeter4 = `Hello my name is ${firstName} ${secondName}`
 console.log(greeter4);
 
-
-let name4 = "Islom";
-console.log(`hello ${1}`);
-console.log(`hello ${"name"}`);
-console.log(`hello ${name4}`);
+// Alert, prompt, confirm
 
 // let result = prompt("How old are you?")
 // alert(result);
@@ -74,6 +67,8 @@ console.log(`hello ${name4}`);
 // }else if(userAge >= 18 && userName == true){
 //     alert("You are Welcome Mr. Islom")
 // }
+
+//  Convertation
 
 let a = 1;
 let b = 1;
@@ -111,15 +106,18 @@ console.log(s); //  1
 console.log(f); // NaN
 console.log(g); // -2
 
+// Alert Number
+
 // let m = prompt("First number?", 1);
 // let n = prompt("Second number?", 2);
 // alert(+m + +n);
 
+
+// Sravnenie
 console.log("Z" > "A");
 console.log("A" > "Z");
 console.log("2" > 1);
 console.log("1" > 2);
-
 console.log(5 > 4) // true
 console.log("apple" > "pineapple") // false
 console.log("2" > "12") // false
@@ -128,6 +126,8 @@ console.log(undefined === null); // false
 console.log(null == "\n0\n"); // false
 console.log(null === +"\n0\n") // false
 
+
+// Condition
 let year = 2022;
 if(year < 2010){
     console.log("Old")
@@ -135,33 +135,19 @@ if(year < 2010){
     console.log("Young")
 }
 
+// Ternary operator
 let agi = 23;
 let agiResult = (agi < 18) ? "Islom" : "NeIslom";
 console.log(agiResult);
 
+// Complex ternary operator
 let message6 = (age < 3) ? 'Hi, baby!' :
   (age < 18) ? 'Hello!' :
   (age < 100) ? 'Greetings!' :
   'What an unusual age!';
 console.log(message6);
 
-// let company = "Netscape"
-
-// (company == "Netscape") ? 
-// console.log("Right!") : console.log("Wrong.");
-
-if("0"){
-    console.log("hello!");
-}
-
-let JSName = "ECMAScript";
-
-if(JSName == "ECMAScript"){
-    console.log("Right")
-}else{
-    console.log("You dont know? 'ECMAScript'!");
-}
-
+// Practice 
 let k = 1, l = 1;
 
 let res = (k + l < 4) ? 'Below' : 'Over';
@@ -172,3 +158,32 @@ let login = "Employee"
 let message8 = (login == 'Employee') ? "Hello" : (login == "Director") ? "Greetings" : (login == "") ? "No login" : "";
 console.log(message8);
 
+// Logical operator
+console.log(null || 2 || undefined); // 2
+console.log(console.log(1) || 2 || console.log(3)); // 1 , 2
+console.log(1 && null && 2); // null
+console.log(console.log(1) && console.log(2)); // 1, undefined
+console.log(null || 2 && 3 || 4) // 3 precendence of && higher than of ||
+
+
+// Condition Practice
+let age99 = 13;
+if(age99 >= 14 && age99 <= 90){
+    console.log("Between 14 and 90")
+}else{
+    console.log("I don't give a fuck")
+}
+
+let age10 = 12;
+if(age10 < 14 || age10 > 90){
+    console.log("Not between 14 and 90");
+}else{
+    console.log("Between 14 and 90");
+}
+
+let age12 = 12;
+if(!(age12 >= 14 && age12 <= 90)){
+    console.log("Between")
+}else{
+    console.log("Not between")
+}
