@@ -187,3 +187,37 @@ if(!(age12 >= 14 && age12 <= 90)){
 }else{
     console.log("Not between")
 }
+
+
+if(-1 || 0) console.log('first'); // First true pass
+if(-1 && 0) console.log('second'); // Second false not pass
+if(null || -1 && 1) console.log('third'); // && both true pass
+
+
+//  Test
+// let userAt = prompt("Who's there");
+
+// if(userAt == undefined){
+//     alert("Canceled")
+// }else if(userAt == "Other"){
+//     alert("I dont know you");
+// }else if(userAt == "Admin"){
+//     let password = prompt("Password");
+
+//     if(password == undefined){
+//         alert("Canceled")
+//     }else if(password == "Other"){
+//         alert("Wrong password")
+//     }else if(password == "TheMaster"){
+//         alert("Welcome")
+//     }
+
+// }
+
+let a1 = 2;
+let b2 = 1;
+console.log(a1 ?? b2);
+// ?? returns the first argument if it’s not null/undefined. Otherwise, the second one.
+
+let result2 = (a1 !== null && a1 !== undefined) ? a1 : b1;
+

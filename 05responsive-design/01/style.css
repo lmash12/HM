@@ -1,47 +1,27 @@
 * {
-	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: none;
 	font-family: sans-serif;
 }
 
-.card {
-	background: pink;
+:root {
+	--prime-black: #312614;
+	--prime-brown: #b7832f;
+	--prime-gray: #707070;
+	--prime-white: #ffffff;
 }
 
-p {
-	font-size: 18px;
+img {
+	max-width: 100%;
 }
 
-a {
-	color: black;
+.container {
+	width: 95%;
+	max-width: 980px;
+	margin: 0 auto;
 }
 
-.button {
-	display: inline-block;
-	background: #ffe600;
-	color: black;
-	padding: 0.5em 1.25em;
-	text-align: center;
-	text-decoration: none;
-	margin-bottom: 50px;
-}
-
-.button:hover {
-	background: orange;
-}
-
-.btn-big {
-	font-size: 1.5rem;
-}
-
-.btn-small {
-	font-size: 0.75rem;
-}
-
-.accent-color {
-	color: #ffe600;
-}
-
-.links {
-	margin-top: 0;
-	margin-bottom: 0;
+.columns {
+	display: flex;
 }
