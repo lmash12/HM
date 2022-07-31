@@ -42,7 +42,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	width: 40%;
+	width: 60%;
 	gap: 50px;
 }
 
@@ -56,6 +56,15 @@ body {
 	color: #eeeeee;
 	font-weight: 400;
 	font-size: 1rem;
+	transition: 0.2s;
+}
+
+.header__logo .header__nav ul li a img {
+	padding: 1.5px 1.5px 1.5px 5px;
+}
+
+.header__logo .header__nav ul li a:hover {
+	color: #24b47e;
 }
 
 .header__sign .btn__start {
@@ -89,4 +98,10 @@ body {
 
 .header__sign .btn__sign:hover {
 	color: #24b47e;
+}
+
+@media (max-width: 1070px) {
+	.vector {
+		display: none;
+	}
 }
