@@ -141,9 +141,9 @@ let agiResult = (agi < 18) ? "Islom" : "NeIslom";
 console.log(agiResult);
 
 // Complex ternary operator
-let message6 = (age < 3) ? 'Hi, baby!' :
-  (age < 18) ? 'Hello!' :
-  (age < 100) ? 'Greetings!' :
+let message6 = age < 3 ? 'Hi, baby!' :
+  age < 18 ? 'Hello!' :
+  age < 100 ? 'Greetings!' :
   'What an unusual age!';
 console.log(message6);
 
@@ -220,4 +220,5 @@ console.log(a1 ?? b2);
 // ?? returns the first argument if it’s not null/undefined. Otherwise, the second one.
 
 let result2 = (a1 !== null && a1 !== undefined) ? a1 : b1;
+
 
