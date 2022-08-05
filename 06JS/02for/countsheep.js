@@ -16,12 +16,26 @@
 
 // countSheep(3);
 
-let countSheep = num => {
+function countSheep(num){
     let text = '';
+    if(num == 0){
+      return ""    
+    }
+  
     for(let i = 1; i <= num; i++){
         text += `${[i]} sheep...`;
-        console.log(text);
     }
+    return text
 }
 
-countSheep(0);
+// console.log(countSheep(3));
+
+// function squareSum(numbers){
+//   numbers.forEach(number => {
+//     return number**2;
+//   });
+
+//   function sum
+// }
+
+// console.log(squareSum([1,2,2]))
