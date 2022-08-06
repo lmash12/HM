@@ -54,32 +54,88 @@ for(let i = 0; i <= text.length; i++){
 
 // 7. Замените пробелы на символ F
 for(let i = 0; i <= text.length; i++){
-    let whiteSpace = text;
-    if(whiteSpace.charAt(i) == " "){
-    whiteSpace.replace(/\s/g, 'f');
-    }
-    console.log(whiteSpace);
+    let reg = /\s/g;
+    if(text.charAt(i) == " ")
+    console.log(text.replace(reg, 'f'));
 }
 
-// let whiteSpace = "This is a hard work!!!";
-// console.log(whiteSpace);
-// console.log(whiteSpace.replace(/\s/g, 'f'));
+// 8. Count Sheep 
+let countSheep = num => {
+    let text = '';
+    if(num == 0){
+        return ""
+    }
 
-// const name1 = 'Hi my name is Flavio'
-// console.log(name1);
-// console.log(name1.replace(/\s/g, '')); //HimynameisFlavio
-    
-    // if(text.indexOf("w")){
-    //     str += 
-    // }
-// }
+    for(let i = 1; i <= num; i++){
+        text += `${[i]} sheep...`;
+    }
+    return text;
+}
 
-// const index = text.indexOf('w');
-// console.log(`${index} iss`);
+console.log(countSheep(3));
+
+// STRING
+
+const noSpace = x => {
+    let reg = /\s/g;
+    return x.replace(reg, "")
+}
 
 
-// const index = text.charAt(8);
-// console.log(index)
-// const index = 8;
-// console.log(`The character at index ${index} is ${text.charAt(8)}`);
+// "a" 7;
+// "o" 10;
+// "н" 20;
+// Найдите кол во символов и умножьте колво на значение символа и в конце прибавьте все три значения
 
+let text2 = "Я изучаю программирование!";
+let countA = 0;
+let countO = 0;
+let countH = 0;
+for(let i = 0; i < text2.length; i++){
+    if(text2[i] == "а"){
+        countA += 7;
+    }
+    if(text2[i] == "о"){
+        countO += 10;
+    }
+    if(text2[i] == "н"){
+        countH +=20;
+    }
+}
+
+
+
+
+let result = countA + countO + countH;
+
+
+console.log(result);
+
+// ARRAY
+
+let qwe = () =>{
+let arr = [1,2,3];
+let arr2 = [4,5,6];
+let mixArr = [...arr,...arr2];
+console.log(mixArr);
+}
+
+let arr = [1, 3, 4, 'Текст', 'Другой текст', false];
+let numberArr;
+let stringArr;
+let booleansArr;
+
+for(let i = 0; i < 0; i++){
+    if(typeof arr[i] === 'string'){
+        stringArr.push(arr[i]);
+    }
+    if(typeof arr[i] === 'number'){
+        numberArr.push(arr[i]);
+    }
+    if(typeof arr[i] === 'boolean'){
+        booleansArr.push(arr[i]);
+    }
+}
+
+
+console.log('number', numberArr, 'string', stringArr, 'boolean', booleansArr);

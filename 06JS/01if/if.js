@@ -130,6 +130,30 @@ let num2 = 12;
 let right = num1 > 2 && num1 < 11 || num2 >= 6 && num2 < 14 ? "Верно" : num1 > 15 && num2 < 12 ? "верно" : "неверно";
 console.log(right);
 
+// 
+let age = 23
+let checkAge = age < 18 ? true : "Did your parents allow you?";
+console.log(checkAge)
+
+let minNum = (a,b) => {
+    if(a < b){
+        return a
+    }else{
+        return b;
+    }
+}
+
+console.log(minNum(2,5))
+console.log(minNum(3,-1))
+console.log(minNum(1,1))
+
+let powNum = (a,b) => {
+    return a**b;
+}
+
+console.log(powNum(3,2));
+console.log(powNum(3,3));
+console.log(powNum(1,100));
 
 
 

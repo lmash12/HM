@@ -120,27 +120,106 @@ let twelve = (a, b) => {
 console.log(twelve(12, 24))
 
 // 13. (r1 > r2)
-// let thirteen = (r1, r2) => {
-//     let s1 = Math.PI * (r1)**2;
-//     let s2 = Math.PI * (r2)**2;
-//     let s3 = s1 - s2;
-//     return s3
-// }
+let thirteen = (r1, r2) =>{
+    let s1 = Math.PI * (r1)**2;
+    let s2 = Math.PI * (r2)**2;
+    let s3 = s1 - s2;
+    return s3;
+}
 
-// console.log(thirteen(12, 8));
+console.log(thirteen(12, 8));
 
-// // 14. 
-// let fourteen = length => {
-//     let radius = 2 * Math.PI * length;
-//     let area = Math.PI * radius**2
-//     return `Radius(R): ${radius} Area(S): ${area}`
-// }
-// console.log(fourteen(24));
+// 14. 
+let fourteen = length =>{
+    let radius = length * 2 * Math.PI;
+    let area = Math.PI * radius**2;
+    return `Radius: ${radius} Area: ${area}`;
+}
 
-// // 15.
-// let fifteen = area => {
+console.log(fourteen(2));
 
-// }
+// 15. 
+let fifteen = area =>{
+    let radius = Math.sqrt(area * Math.PI);
+    let length = 2 * Math.PI * radius;
+    return `Radius: ${radius} Length: ${length}`;
+}
+
+console.log(fifteen(12));
+
+// 16. Найти расстояние между двумя точками с заданными координатами х1 х2 на числовой оси х2 - х1
+let sixteen = (x1, x2) =>{
+    let horizontalDistance = Math.sqrt((x2-x1)**2);
+    return horizontalDistance;
+}
+
+console.log(sixteen(3,7));
+
+// 17. Даны три точки A B C на числовой оси. Найти длины отрезков AC и BC и их сумму
+let seventeen = (a,b,c) =>{
+    let ac = Math.abs(a - c);
+    let bc = Math.abs(b - c);
+    let x = ac + bc;
+    return x;
+}
+
+console.log(seventeen(12, 15, 17));
+
+// Boolean 
+
+// 1. 
+let bool1 = 10;
+console.log(bool1 > 0);
+
+// 2. 
+let bool2 = 3;
+console.log(bool2 % 2 != 0);
+
+// 3. 
+let bool3 = 4;
+console.log(bool3 % 2 == 0);
+
+// 4.
+let bool4 = (a, b) =>{
+    return a > 2 && b <= 3;
+}
+
+console.log(bool4(3,3));
+
+// 5. 
+let bool5 = (a,b) =>{
+    return a >= 0 || b < -2;
+}
+
+console.log(bool5(0, -4));
+
+// 6.
+let bool6 = (a,b,c) => {
+    return a < b < c;
+}
+console.log(bool6(1,2,3));
+
+// 7. 
+let bool7 = (a,b,c) =>{
+    return b < c && b > a;
+}
+
+console.log(bool7(10, 12, 15));
+
+// 8.
+let bool8 = (a,b) =>{
+    return a % 2 !== 0 && b % 2 !== 0;
+}
+
+console.log(bool8(3,5));
+
+// 9.
+let bool9 = (a,b) => {
+    return a % 2 !== 0 || b % 2 !== 0;
+}
+console.log(bool9(3,6));
+
+// 10.
 
 
 

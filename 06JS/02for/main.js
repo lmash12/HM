@@ -122,12 +122,5 @@ for(let i = 0; i < 10; i++){
   
 //   alert('Done!');
 
-let countSheep = num =>{
-    let text = '';
-    for(let i = 0; i <= num; i++){
-        console.log(i);
-    }
-}
 
-console.log(countSheep(3));
 
