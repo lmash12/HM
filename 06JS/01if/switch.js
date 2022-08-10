@@ -1,6 +1,6 @@
 let a = 6;
 
-switch(a){
+switch (a) {
     case 3:
         console.log('Too small');
         break;
@@ -16,10 +16,10 @@ switch(a){
         console.log("I dont know")
 }
 
-let clientCheck = browser =>{
-    if(browser === 'Edge' || browser === 'Firefox' || browser === 'Safari' || browser === "Opera"){
+let clientCheck = browser => {
+    if (browser === 'Edge' || browser === 'Firefox' || browser === 'Safari' || browser === "Opera") {
         return `Okay we support these browser`
-    }else{
+    } else {
         return `We hope that this page look ok!`;
     }
 }
@@ -27,7 +27,7 @@ let clientCheck = browser =>{
 console.log(clientCheck("OK"));
 
 let b = 0;
-switch(b){
+switch (b) {
     case 0:
         console.log("Zero")
         break;
@@ -40,6 +40,8 @@ switch(b){
     default:
         console.log("Number");
 }
+
+
 
 
 

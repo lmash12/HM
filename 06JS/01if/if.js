@@ -135,25 +135,6 @@ let age = 23
 let checkAge = age < 18 ? true : "Did your parents allow you?";
 console.log(checkAge)
 
-let minNum = (a,b) => {
-    if(a < b){
-        return a
-    }else{
-        return b;
-    }
-}
-
-console.log(minNum(2,5))
-console.log(minNum(3,-1))
-console.log(minNum(1,1))
-
-let powNum = (a,b) => {
-    return a**b;
-}
-
-console.log(powNum(3,2));
-console.log(powNum(3,3));
-console.log(powNum(1,100));
 
 
 

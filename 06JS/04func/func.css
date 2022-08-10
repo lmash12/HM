@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 20px solid black;
+    margin: 20px auto;
+    width: 50%;
+    filter: blur(0.5px);
+}
+
+div{
+    padding: 10px;
+}
+
+.one{
+    border: 1px solid whitesmoke;
+    background-color: aquamarine;
+    filter: blur(1px);
+}
+
+.two{
+    border: 1px solid bisque;
+    background-color:blueviolet;
+    filter: blur(2px);
+}
+
+.three{
+    border: 1px solid indianred;
+    background-color:violet;
+    filter: opacity(0.1);
+}
