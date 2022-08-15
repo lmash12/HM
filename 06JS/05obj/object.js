@@ -112,6 +112,8 @@ console.log(sumTJS());
 
 
 
+// DZ END
+
 let user10 = {
     name: "Islom",
     age: 23,
