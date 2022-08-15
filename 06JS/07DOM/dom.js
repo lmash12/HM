@@ -57,46 +57,8 @@ function changeBoxBg() {
 go.addEventListener("click", () => {
     headerTraffic.innerHTML = "You found a go-boy MALADES"
     go.style.width = "500px";
-    containerDiv.style.padding = "60px 20px"
+    containerDiv.style.padding = "50px 20px"
 })
-
-
-
-
-
-
-// //  Counter
-// let counterInput = document.getElementById("counterInputNumber").value;
-
-
-// // BTN
-// let btnMinus = document.querySelector(".minus");
-// let btnPlus = document.querySelector(".plus");
-
-// document.counterInput.min = 1;
-// document.counterInput.max = 9;
-
-// console.log(counterInput);
-
-
-
-
-
-// btnMinus.addEventListener('click', () => {
-//     count--;
-//     console.log(count)
-// })
-
-// btnPlus.addEventListener('click', () => {
-//     count++;
-//     console.log(count)
-// })
-
-
-
-
-
-
 
 
 
