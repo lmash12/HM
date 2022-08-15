@@ -49,18 +49,8 @@ user21["f"](); // Admin(dot or square brackets access the method - doesn't matte
 //     element.addEventListener("click", abc);
 // })
 
-// // THIS , CALL, BIND, APPLY
 
-// function hello() {
-//     console.log('Hello', this);
-// }
-
-// const person = {
-//     name: "islom",
-//     age: 23,
-//     sayHello: hello,
-// }
-
+// THIS , CALL , BIND , APPLY
 
 function hello() {
     console.log("Hello", this)
@@ -75,19 +65,55 @@ const person = {
         console.group(`${this.name} info:`);
         console.log(`Name is ${this.name}`);
         console.log(`Age is ${this.age}`);
-        console.log(`Job is ${this.job}`);
-        console.log(`Phone is ${this.phone}`);
+        console.log(`Job is ${job}`);
+        console.log(`Phone is ${phone}`);
         console.groupEnd();
     }
 }
 
 
-const dasha = {
-    name: "Dasha",
-    age: 19,
+const lena = {
+    name: "Lena",
+    age: 34,
 }
 
-person.logInfo.bind(dasha)();
+// person.logInfo.bind(lena, 'Frontend', "123")();
+// person.logInfo.call(lena, "Frontend", "123");
+person.logInfo.apply(lena, ["Frontend", "123"]);
+
+//  ==============
+
+const array = [1, 2, 3, 4, 5];
+
+// function multBy(arr, n) {
+//     return arr.map(function (i) {
+//         return i * n
+//     })
+// }
+
+// console.log(multBy(array, 15))
+
+Array.prototype.multBy = function (n) {
+    return this.map(function (i) {
+        return i * n
+    })
+}
+
+console.log(array.multBy(2));
+
+
+
+// function double(arr, n) {
+//     let arrayDouble = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         arrayDouble.push(arr[i] * n)
+//     }
+
+//     return arrayDouble;
+// }
+
+// console.log(double(array, 2));
+
 
 
 
