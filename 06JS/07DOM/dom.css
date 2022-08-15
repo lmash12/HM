@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body{
+    /* background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59) ; */
+    background: linear-gradient(to right, #000428, #004e92) ;
+    animation: fadeInAnimation ease 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: 0.3s all;
+}
+
+h1{
+    text-align: center;
+    margin: 30px auto;
+    color: #e0e0e0;
+    width: 50%;
+    font-size: 5rem;
+    border-radius: 20px;
+    padding: 10px 20px;
+    filter: blur(0);
+    transition: 0.3s all;
+    user-select: none;
+}
+
+h1:hover{
+    filter: blur(5px);
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.container__div{
+    padding: 162px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.counter__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.counter__container .num{
+    padding: 3px 45px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: none;
+    color: #fff;
+    border-color: #fff;
+}
+
+
+.counter__container .btn{
+    padding: 3px 20px;
+    color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    filter: blur(0.6px);
+}
+
+.counter__container .minus{
+    background: #240b36;
+}
+
+.counter__container .plus{
+    background: #c31432;
+}
+
+.box{
+    margin: 30px auto;
+    width: 300px;
+    border: none;
+    filter: opacity(0.8);
+    height: 300px;
+    /* border-radius: 50%; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    transition: color 1s ease;
+    padding: 120px;
+}
+
+.container__div .box .war{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    user-select: none;
+}
+
+.go__container{
+    transition: all 0.3s ease;
+}
+
+
+.go__container img{
+    width: 205px;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+
+/* Key Frames */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
