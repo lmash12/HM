@@ -1,13 +1,13 @@
-const plus = document.querySelector(".plus");
-const minus = document.querySelector(".minus");
-const num = document.querySelector(".num");
-const boxColor = document.querySelector(".box");
-const warning = document.getElementById("warn");
-const goLang = document.querySelector(".go__container");
-const go = document.getElementById("goBoy");
-const headerTraffic = document.getElementById("trafficH");
-const containerDiv = document.querySelector(".container__div");
-const titleHTML = document.querySelector(".title");
+const plus = document.querySelector(".plus"); // BTN PLUS
+const minus = document.querySelector(".minus"); // BTN MINUS
+const num = document.querySelector(".num"); // SPAN COUNTER
+const boxColor = document.querySelector(".box"); // BOX
+const warning = document.getElementById("warn"); // WARNING TEXT
+const goLang = document.querySelector(".go__container"); // CONTAINER FOR GO IMG
+const go = document.getElementById("goBoy"); // IMG GO BOY
+const headerTraffic = document.getElementById("trafficH"); // H1 TEXT
+const containerDiv = document.querySelector(".container__div"); // MAIN CONTAINER
+const titleHTML = document.querySelector(".title"); // TITLE
 
 // Title link
 function setFavicons(favImg) {
@@ -51,7 +51,6 @@ minus.addEventListener('click', () => {
 
 
 // Function Change box BG
-
 function changeBoxBg() {
     if (counter == 1 || counter == 2 || counter == 3) {
         boxColor.style.background = "#BD3F32";
