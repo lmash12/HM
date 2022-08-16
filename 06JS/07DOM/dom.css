@@ -100,9 +100,10 @@ h1:hover{
 
 .container__div .box .war{
     color: white;
-    text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 13px 0 0 0;
     font-size: 2.3rem;
     user-select: none;
 }

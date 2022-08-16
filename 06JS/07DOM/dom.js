@@ -41,6 +41,7 @@ function changeBoxBg() {
         boxColor.style.borderRadius = "0%";
         boxColor.style.transition = "all 1s";
         warning.innerHTML = "STOP!";
+        warning.style.padding = "20px 0 0 0"
         goLang.style.filter = "opacity(0)";
         headerTraffic.innerHTML = "Traffic Light";
         containerDiv.style.padding = "160px 20px"
@@ -51,6 +52,7 @@ function changeBoxBg() {
         boxColor.style.borderRadius = "30%";
         boxColor.style.transition = "all 1s";
         warning.innerHTML = "WAIT FOR IT BUDDY!";
+        warning.style.padding = "0"
         goLang.style.filter = "opacity(0)";
         headerTraffic.innerHTML = "Traffic Light";
         go.style.width = "200px";
@@ -61,6 +63,7 @@ function changeBoxBg() {
         boxColor.style.borderRadius = "50%";
         boxColor.style.transition = "all 1s";
         warning.innerHTML = "Go!";
+        warning.style.padding = "20px 0 0 0"
         goLang.style.filter = "opacity(1)";
         titleHTML.innerHTML = "Green"
     }
