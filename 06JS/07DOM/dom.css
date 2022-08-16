@@ -76,6 +76,13 @@ h1:hover{
     text-align: center;
     box-shadow: 5px 5px 5px black;
     filter: blur(0.6px);
+    transition: all 0.1s ease-in;
+}
+
+.counter__container .btn:active{
+    box-shadow: 0;
+    background: green;
+
 }
 
 .counter__container .minus{
