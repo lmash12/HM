@@ -26,6 +26,8 @@ minus.addEventListener('click', () => {
     console.log(counter)
 });
 
+goLang.style.filter = "opacity(0)";
+
 function changeBoxBg() {
     if (counter == 1 || counter == 2 || counter == 3) {
         boxColor.style.background = "#BD3F32";
