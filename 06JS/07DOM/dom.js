@@ -9,12 +9,10 @@ const headerTraffic = document.getElementById("trafficH"); // H1 TEXT
 const containerDiv = document.querySelector(".container__div"); // MAIN CONTAINER
 const titleHTML = document.querySelector(".title"); // TITLE
 const headerFour = document.getElementById("aSync") // HEADER 4
-const inputNumber = document.getElementById('numberCount');
-
+const inputNumber = document.getElementById('numberCount'); // INPUT NUMBER
 
 
 // Interval Header
-
 headerFour.style.opacity = "0";
 
 function timeUp() {
@@ -44,11 +42,10 @@ setFavicons('./favicon_io__white/favicon-32x32.png');
 // BTN
 let counter = 1;
 
-inputNumber.value = counter;
-
 plus.addEventListener('click', () => {
     counter++
-    counter = (counter == 10) ? 1 : counter++;
+    counter = (counter > 9) ? 1 : counter++;
+
     // WITH SPAN
     // if (counter == 10) {
     //     counter = 1;
@@ -56,7 +53,7 @@ plus.addEventListener('click', () => {
     // num.innerHTML = counter;
 
     // WITH INPUT  
-    inputNumber.value = counter;
+    inputNumber.value = Number(counter);
     changeBoxBg()
     console.log(counter)
 });
@@ -132,20 +129,3 @@ go.addEventListener("click", () => {
     containerDiv.style.padding = "50px 20px";
     titleHTML.innerHTML = "Go Boy";
 })
-
-
-//  Input Number
-// let plusInputBtn = document.getElementById("plusInput");
-// let minusInputBtn = document.getElementById("minusInput");
-
-// let i = 0;
-
-// plusInputBtn.addEventListener("click", () => {
-//     document.getElementById('numberCount').value = ++i;
-// });
-
-// minusInputBtn.addEventListener("click", () => {
-//     document.getElementById("numberCount").value = i--
-// });
-
-
