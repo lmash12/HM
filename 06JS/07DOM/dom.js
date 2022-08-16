@@ -121,10 +121,18 @@ go.addEventListener("click", () => {
 })
 
 
+//  Input Number
+let plusInputBtn = document.getElementById("plusInput");
+let minusInputBtn = document.getElementById("minusInput");
 
+let i = 0;
 
+plusInputBtn.addEventListener("click", () => {
+    document.getElementById('numberCount').value = ++i;
+});
 
-
-
+minusInputBtn.addEventListener("click", () => {
+    document.getElementById("numberCount").value = i--
+});
 
 

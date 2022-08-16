@@ -20,6 +20,14 @@ body{
     transition: 0.3s all;
 }
 
+/* INput Container */
+.input-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Input COntainer */
+
 h1{
     text-align: center;
     margin: 30px auto;
