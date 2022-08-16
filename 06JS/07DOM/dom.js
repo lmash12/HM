@@ -113,8 +113,8 @@ function changeBoxBg() {
 
 // Go interactive
 go.addEventListener("click", () => {
-    headerTraffic.innerHTML = "You found a go-boy MALADES";
-    go.style.width = "500px";
+    headerTraffic.innerHTML = "You found a go-boy. Kandota zan";
+    go.style.width = "400px";
     containerDiv.style.padding = "50px 20px";
     titleHTML.innerHTML = "Go Boy";
 })
