@@ -9,6 +9,8 @@ const headerTraffic = document.getElementById("trafficH"); // H1 TEXT
 const containerDiv = document.querySelector(".container__div"); // MAIN CONTAINER
 const titleHTML = document.querySelector(".title"); // TITLE
 const headerFour = document.getElementById("aSync") // HEADER 4
+const inputNumber = document.getElementById('numberCount');
+
 
 
 // Interval Header
@@ -42,13 +44,19 @@ setFavicons('./favicon_io__white/favicon-32x32.png');
 // BTN
 let counter = 1;
 
+inputNumber.value = counter;
+
 plus.addEventListener('click', () => {
     counter++
     counter = (counter == 10) ? 1 : counter++;
+    // WITH SPAN
     // if (counter == 10) {
     //     counter = 1;
     // }
-    num.innerHTML = counter;
+    // num.innerHTML = counter;
+
+    // WITH INPUT  
+    inputNumber.value = counter;
     changeBoxBg()
     console.log(counter)
 });
@@ -56,10 +64,15 @@ plus.addEventListener('click', () => {
 minus.addEventListener('click', () => {
     counter--;
     counter = (counter <= 0) ? 9 : counter--;
+
+    // WITH SPAN
     // if (counter == 0 || counter < 0) {
     //     counter = 9;
     // }
-    num.innerHTML = counter;
+    // num.innerHTML = counter;
+
+    // WITH INPUT
+    inputNumber.value = counter;
     changeBoxBg()
     console.log(counter)
 });
@@ -122,17 +135,17 @@ go.addEventListener("click", () => {
 
 
 //  Input Number
-let plusInputBtn = document.getElementById("plusInput");
-let minusInputBtn = document.getElementById("minusInput");
+// let plusInputBtn = document.getElementById("plusInput");
+// let minusInputBtn = document.getElementById("minusInput");
 
-let i = 0;
+// let i = 0;
 
-plusInputBtn.addEventListener("click", () => {
-    document.getElementById('numberCount').value = ++i;
-});
+// plusInputBtn.addEventListener("click", () => {
+//     document.getElementById('numberCount').value = ++i;
+// });
 
-minusInputBtn.addEventListener("click", () => {
-    document.getElementById("numberCount").value = i--
-});
+// minusInputBtn.addEventListener("click", () => {
+//     document.getElementById("numberCount").value = i--
+// });
 
 
