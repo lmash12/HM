@@ -14,6 +14,9 @@ let counter = 0;
 plus.addEventListener('click', () => {
     counter++
     counter = (counter == 10) ? 1 : counter++;
+    // if (counter == 10) {
+    //     counter = 1;
+    // }
     num.innerHTML = counter;
     changeBoxBg()
     console.log(counter)
@@ -21,7 +24,10 @@ plus.addEventListener('click', () => {
 
 minus.addEventListener('click', () => {
     counter--;
-    counter = (counter == 0) ? 9 : counter--;
+    counter = (counter <= 0) ? 9 : counter--;
+    // if (counter == 0 || counter < 0) {
+    //     counter = 9;
+    // }
     num.innerHTML = counter;
     changeBoxBg()
     console.log(counter)
