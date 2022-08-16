@@ -12,6 +12,7 @@ const headerFour = document.getElementById("aSync") // HEADER 4
 const inputNumber = document.getElementById('numberCount'); // INPUT NUMBER
 
 
+
 // Interval Header
 headerFour.style.opacity = "0";
 
@@ -129,3 +130,64 @@ go.addEventListener("click", () => {
     containerDiv.style.padding = "50px 20px";
     titleHTML.innerHTML = "Go Boy";
 })
+
+//////////////////////// DOM TEST
+
+// Parent Node
+console.log(plus.parentNode);
+
+// Getting Child Element
+let firstChild = containerDiv.firstChild.nodeName;
+console.log(firstChild);
+
+let allChilds = containerDiv.children;
+console.log(allChilds);
+
+let lastChild = containerDiv.lastChild.nodeName;
+console.log(lastChild);
+
+
+// Get the siblings elements
+// Get next Sibling 
+let nextSibling = minus.nextElementSibling;
+console.log(nextSibling);
+
+// Get previous Sibling
+let previousSibling = plus.previousElementSibling;
+console.log(previousSibling);
+
+// Create Element
+let element = document.createElement("div");
+
+// Set ID to element(div)
+element.id = "content";
+// Set Class to element(div)
+element.className = "note";
+// Set Text to element(div)
+element.innerHTML = '<p>Create element example</p>';
+
+// Add new element to element(div)
+let h6 = document.createElement("h6");
+h6.textContent = "Add h2 element to the div";
+element.appendChild(h6);
+
+// Add element to html structure
+document.body.appendChild(element);
+
+
+let fragment = document.createDocumentFragment();
+for (let i = 0; i < 1000; i++) {
+    let p = document.createElement("p");
+    p.textContent = `Paragraph ${i}`;
+    p.style.color = "white";
+    fragment.appendChild(p);
+}
+
+element.appendChild(fragment);
+
+
+
+
+
+
+
