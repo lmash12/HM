@@ -8,6 +8,24 @@ const go = document.getElementById("goBoy"); // IMG GO BOY
 const headerTraffic = document.getElementById("trafficH"); // H1 TEXT
 const containerDiv = document.querySelector(".container__div"); // MAIN CONTAINER
 const titleHTML = document.querySelector(".title"); // TITLE
+const headerFour = document.getElementById("aSync") // HEADER 4
+
+
+// Interval Header
+
+headerFour.style.opacity = "0";
+
+function timeUp() {
+    headerFour.style.opacity = "1";
+}
+
+function timeUpFade() {
+    headerFour.style.opacity = "0"
+}
+
+let intervalId = setInterval(timeUp, 9000);
+let intervalId2 = setInterval(timeUpFade, 18000);
+
 
 // Title link
 function setFavicons(favImg) {
@@ -50,6 +68,11 @@ minus.addEventListener('click', () => {
 
 
 
+
+// Default 
+boxColor.style.background = "#BD3F32";
+warning.innerHTML = "STOP!";
+
 // Function Change box BG
 function changeBoxBg() {
     if (counter == 1 || counter == 2 || counter == 3) {
@@ -59,8 +82,9 @@ function changeBoxBg() {
         warning.innerHTML = "STOP!";
         warning.style.padding = "15px 0 0 0"
         goLang.style.filter = "opacity(0)";
+        go.style.width = "205px";
         headerTraffic.innerHTML = "Traffic Light";
-        containerDiv.style.padding = "160px 20px";
+        containerDiv.style.padding = "149px 20px";
         titleHTML.innerHTML = "Red";
         setFavicons('./favicon_io__red/favicon-32x32.png');
     } else if (counter == 4 || counter == 5 || counter == 6) {
@@ -72,7 +96,7 @@ function changeBoxBg() {
         goLang.style.filter = "opacity(0)";
         headerTraffic.innerHTML = "Traffic Light";
         go.style.width = "200px";
-        containerDiv.style.padding = "160px 20px";
+        containerDiv.style.padding = "149px 20px";
         titleHTML.innerHTML = "Yellow";
         setFavicons('./favicon_io__yellow/favicon-32x32.png')
     } else {
@@ -94,6 +118,11 @@ go.addEventListener("click", () => {
     containerDiv.style.padding = "50px 20px";
     titleHTML.innerHTML = "Go Boy";
 })
+
+
+
+
+
 
 
 

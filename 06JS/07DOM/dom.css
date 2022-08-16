@@ -37,13 +37,20 @@ h1:hover{
     filter: blur(5px);
 }
 
+h4{
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 2rem;
+    transition: 0.3s all;
+}
+
 .container{
     width: 1440px;
     margin: 0 auto;
 }
 
 .container__div{
-    padding: 162px 20px;
+    padding: 149px 20px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -74,16 +81,13 @@ h1:hover{
     border-radius: 10px;
     border: none;
     text-align: center;
-    box-shadow: 5px 5px 5px black;
     filter: blur(0.6px);
     transition: all 0.1s ease-in;
 }
 
 .counter__container .btn:active{
-    box-shadow: 0;
-    background: green;
-
-}
+    box-shadow: 5px 5px 5px black;
+} 
 
 .counter__container .minus{
     background: #240b36;
