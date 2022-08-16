@@ -38,11 +38,9 @@ function setFavicons(favImg) {
 
 setFavicons('./favicon_io__white/favicon-32x32.png');
 
-// Golang PIC
-goLang.style.filter = "opacity(0)";
 
 // BTN
-let counter = 0;
+let counter = 1;
 
 plus.addEventListener('click', () => {
     counter++
@@ -65,8 +63,6 @@ minus.addEventListener('click', () => {
     changeBoxBg()
     console.log(counter)
 });
-
-
 
 
 // Default 
@@ -95,7 +91,7 @@ function changeBoxBg() {
         warning.style.padding = "0";
         goLang.style.filter = "opacity(0)";
         headerTraffic.innerHTML = "Traffic Light";
-        go.style.width = "200px";
+        go.style.width = "205px";
         containerDiv.style.padding = "149px 20px";
         titleHTML.innerHTML = "Yellow";
         setFavicons('./favicon_io__yellow/favicon-32x32.png')
@@ -110,6 +106,11 @@ function changeBoxBg() {
         setFavicons('./favicon_io__green/favicon-32x32.png')
     }
 };
+
+
+
+// Golang PIC
+goLang.style.filter = "opacity(0)";
 
 // Go interactive
 go.addEventListener("click", () => {
