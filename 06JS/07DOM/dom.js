@@ -58,7 +58,7 @@ function changeBoxBg() {
         boxColor.style.borderRadius = "0%";
         boxColor.style.transition = "all 1s";
         warning.innerHTML = "STOP!";
-        warning.style.padding = "20px 0 0 0"
+        warning.style.padding = "15px 0 0 0"
         goLang.style.filter = "opacity(0)";
         headerTraffic.innerHTML = "Traffic Light";
         containerDiv.style.padding = "160px 20px";
