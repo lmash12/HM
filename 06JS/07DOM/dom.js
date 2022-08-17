@@ -8,7 +8,7 @@ const go = document.getElementById("goBoy"); // IMG GO BOY
 const headerTraffic = document.getElementById("trafficH"); // H1 TEXT
 const containerDiv = document.querySelector(".container__div"); // MAIN CONTAINER
 const titleHTML = document.querySelector(".title"); // TITLE
-const headerFour = document.getElementById("aSync") // HEADER 4
+const headerFour = document.getElementById("aSync"); // HEADER 4
 const inputNumber = document.getElementById('numberCount'); // INPUT NUMBER
 
 
@@ -21,7 +21,7 @@ function timeUp() {
 }
 
 function timeUpFade() {
-    headerFour.style.opacity = "0"
+    headerFour.style.opacity = "0";
 }
 
 let intervalId = setInterval(timeUp, 9000);
@@ -55,8 +55,8 @@ plus.addEventListener('click', () => {
 
     // WITH INPUT  
     inputNumber.value = Number(counter);
-    changeBoxBg()
-    console.log(counter)
+    changeBoxBg();
+    console.log(counter);
 });
 
 minus.addEventListener('click', () => {
@@ -71,8 +71,8 @@ minus.addEventListener('click', () => {
 
     // WITH INPUT
     inputNumber.value = counter;
-    changeBoxBg()
-    console.log(counter)
+    changeBoxBg();
+    console.log(counter);
 });
 
 
@@ -83,39 +83,52 @@ warning.innerHTML = "STOP!";
 // Function Change box BG
 function changeBoxBg() {
     if (counter == 1 || counter == 2 || counter == 3) {
-        boxColor.style.background = "#BD3F32";
-        boxColor.style.borderRadius = "0%";
-        boxColor.style.transition = "all 1s";
-        warning.innerHTML = "STOP!";
-        warning.style.padding = "15px 0 0 0"
-        goLang.style.filter = "opacity(0)";
-        go.style.width = "205px";
-        headerTraffic.innerHTML = "Traffic Light";
-        containerDiv.style.padding = "149px 20px";
-        titleHTML.innerHTML = "Red";
+        redBox();
         setFavicons('./favicon_io__red/favicon-32x32.png');
     } else if (counter == 4 || counter == 5 || counter == 6) {
-        boxColor.style.background = "#F2C94C";
-        boxColor.style.borderRadius = "30%";
-        boxColor.style.transition = "all 1s";
-        warning.innerHTML = "WAIT FOR IT BUDDY!";
-        warning.style.padding = "0";
-        goLang.style.filter = "opacity(0)";
-        headerTraffic.innerHTML = "Traffic Light";
-        go.style.width = "205px";
-        containerDiv.style.padding = "149px 20px";
-        titleHTML.innerHTML = "Yellow";
-        setFavicons('./favicon_io__yellow/favicon-32x32.png')
+        yellowBox();
+        setFavicons('./favicon_io__yellow/favicon-32x32.png');
     } else {
-        boxColor.style.background = "#237A57";
-        boxColor.style.borderRadius = "50%";
-        boxColor.style.transition = "all 1s";
-        warning.innerHTML = "Go!";
-        warning.style.padding = "20px 0 0 0";
-        goLang.style.filter = "opacity(1)";
-        titleHTML.innerHTML = "Green";
-        setFavicons('./favicon_io__green/favicon-32x32.png')
+        greenBox();
+        setFavicons('./favicon_io__green/favicon-32x32.png');
     }
+};
+
+// Functions for BOX
+function redBox() {
+    boxColor.style.background = "#BD3F32";
+    boxColor.style.borderRadius = "0%";
+    boxColor.style.transition = "all 1s";
+    warning.innerHTML = "STOP!";
+    warning.style.padding = "15px 0 0 0"
+    goLang.style.filter = "opacity(0)";
+    go.style.width = "205px";
+    headerTraffic.innerHTML = "Traffic Light";
+    containerDiv.style.padding = "149px 20px";
+    titleHTML.innerHTML = "Red";
+};
+
+function yellowBox() {
+    boxColor.style.background = "#F2C94C";
+    boxColor.style.borderRadius = "30%";
+    boxColor.style.transition = "all 1s";
+    warning.innerHTML = "WAIT FOR IT BUDDY!";
+    warning.style.padding = "0";
+    goLang.style.filter = "opacity(0)";
+    headerTraffic.innerHTML = "Traffic Light";
+    go.style.width = "205px";
+    containerDiv.style.padding = "149px 20px";
+    titleHTML.innerHTML = "Yellow";
+};
+
+function greenBox() {
+    boxColor.style.background = "#237A57";
+    boxColor.style.borderRadius = "50%";
+    boxColor.style.transition = "all 1s";
+    warning.innerHTML = "Go!";
+    warning.style.padding = "20px 0 0 0";
+    goLang.style.filter = "opacity(1)";
+    titleHTML.innerHTML = "Green";
 };
 
 
