@@ -31,6 +31,7 @@ switchBtn.addEventListener('click', () => {
     }
 });
 
+
 // Interval Header
 headerFour.style.opacity = "0";
 
@@ -79,7 +80,7 @@ minus.addEventListener('click', () => {
     num.innerHTML = counter;
 
     // WITH INPUT
-    inputNumber.value = counter;
+    inputNumber.value = Number(counter);
     changeBoxBg();
     console.log(counter);
 });
@@ -107,11 +108,22 @@ function changeBoxBg() {
 goLang.style.filter = "opacity(0)";
 
 // Go interactive
+let goListener = true;
+
 go.addEventListener("click", () => {
-    headerTraffic.innerHTML = "You found a go-boy. <br>Kandota zan";
-    go.style.width = "400px";
-    containerDiv.style.padding = "50px 20px";
-    titleHTML.innerHTML = "Go Boy";
+    if (goListener == true) {
+        goListener = false
+        headerTraffic.innerHTML = "You found a go-boy. <br>Kandota zan";
+        go.style.width = "400px";
+        containerDiv.style.padding = "50px 20px";
+        titleHTML.innerHTML = "Go Boy";
+    } else if (goListener == false) {
+        goListener = true;
+        goLang.style.filter = "opacity(0)";
+        go.style.width = "205px";
+        containerDiv.style.padding = "149px 20px";
+        headerTraffic.innerHTML = "Traffic Light";
+    }
 })
 
 // Functions
@@ -249,8 +261,8 @@ function addGlobalEventListener(type, selector, callback) {
 //     })
 // })
 
-const newDiv = document.createElement("div");
-newDiv.style.width = "200px";
-newDiv.style.height = "200px";
-newDiv.style.background = "purple";
-document.body.append(newDiv);
+// const newDiv = document.createElement("div");
+// newDiv.style.width = "200px";
+// newDiv.style.height = "200px";
+// newDiv.style.background = "purple";
+// document.body.append(newDiv);

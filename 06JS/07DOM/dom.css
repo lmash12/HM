@@ -66,11 +66,12 @@ h4{
     background: none;
     color: white;
     border-radius: 5px;
-    padding: 40px 0 0 0;
+    margin: 40px 0 0 0;
     font-size: 2rem;
     position: absolute;
     border: none;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .toggleBtn:hover{
@@ -157,9 +158,23 @@ h4{
 }
 
 .go__container img{
+    margin: 30px 0 0 0;
     width: 205px;
     user-select: none;
     transition: all 0.2s ease;
+    position: absolute;
+}
+
+ .go__container img:hover{ 
+    transform: translate(10px);
+    transform: translateY(-40px);
+} 
+
+.go__container .goMove{
+    transition:all 0.2s ease;
+}
+.go__container .goMove:hover{
+        transform: translateY(-40px);
 }
 
 /* TEST */
