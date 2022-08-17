@@ -146,6 +146,41 @@ h4{
     transition: all 0.2s ease;
 }
 
+/* TEST */
+.grandParent{
+    background: red;
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent{
+    background: blue;
+    width: 70%;
+    height: 100px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child{
+    background: green;
+    width: 30%;
+    height: 50px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* Key Frames */
 @keyframes fadeInAnimation {

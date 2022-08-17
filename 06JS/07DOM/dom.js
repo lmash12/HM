@@ -141,3 +141,96 @@ function greenBox() {
     goLang.style.filter = "opacity(1)";
     titleHTML.innerHTML = "Green";
 };
+
+// TEST 
+
+// let testBtn = document.getElementById("eventObject");
+
+// testBtn.addEventListener('click', e => {
+//     console.log(e.type)
+// });
+
+// let link = document.querySelector('a');
+
+// link.addEventListener('click', e => {
+//     console.log('clicked');
+//     e.preventDefault();
+// })
+
+// let testBtn2 = document.getElementById("eventObject2");
+
+// testBtn2.addEventListener('click', e => {
+//     console.log('The button was clicked!');
+//     e.stopPropagation();
+// })
+
+// document.body.addEventListener("click", e => {
+//     console.log("The body was clicked");
+// })
+
+// Bubbling, Capturing, e.stopPropagation, Once, RemoveEvent
+
+// let grandParent = document.querySelector(".grandParent");
+// let parent = document.querySelector(".parent");
+// let child = document.querySelector(".child");
+
+// grandParent.addEventListener("click", e => {
+//     console.log("Grand parent Capture");
+//     grandParent.style.background = "orange"
+//     e.stopPropagation();
+// });
+
+// parent.addEventListener("click", printHi)
+
+// setTimeout(() => {
+//     parent.removeEventListener('click', printHi)
+// }, 2000);
+
+
+// child.addEventListener("click", e => {
+//     console.log("Child 1");
+//     child.style.background = "aqua";
+//     e.stopPropagation();
+// }, { once: true });
+
+// document.addEventListener("click", e => {
+//     console.log("Document 1");
+// });
+
+// function printHi() {
+//     console.log("Hi")
+// }
+
+
+
+const allDivs = document.querySelectorAll('div');
+
+// document.addEventListener("click", e => {
+//     if (e.target.matches("div")) {
+//         console.log("hi");
+//     }
+// })
+
+addGlobalEventListener("click", "div", e => {
+    console.log("hi");
+})
+
+function addGlobalEventListener(type, selector, callback) {
+    document.addEventListener(type, e => {
+        if (e.target.matches(selector)) {
+            callback(e)
+        }
+    })
+}
+
+// allDivs.forEach(div => {
+//     div.addEventListener('click', () => {
+//         console.log("h1");
+//     })
+// })
+
+const newDiv = document.createElement("div");
+newDiv.style.width = "200px";
+newDiv.style.height = "200px";
+newDiv.style.background = "purple";
+document.body.append(newDiv);
