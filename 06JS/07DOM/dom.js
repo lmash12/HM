@@ -28,15 +28,6 @@ let intervalId = setInterval(timeUp, 9000);
 let intervalId2 = setInterval(timeUpFade, 18000);
 
 
-// Title link
-function setFavicons(favImg) {
-    let headTitle = document.querySelector('head');
-    let setFavicon = document.createElement('link');
-    setFavicon.setAttribute('rel', 'shortcut icon');
-    setFavicon.setAttribute('href', favImg);
-    headTitle.appendChild(setFavicon);
-}
-
 setFavicons('./favicon_io__white/favicon-32x32.png');
 
 
@@ -94,7 +85,27 @@ function changeBoxBg() {
     }
 };
 
-// Functions for BOX
+// Golang PIC
+goLang.style.filter = "opacity(0)";
+
+// Go interactive
+go.addEventListener("click", () => {
+    headerTraffic.innerHTML = "You found a go-boy. <br>Kandota zan";
+    go.style.width = "400px";
+    containerDiv.style.padding = "50px 20px";
+    titleHTML.innerHTML = "Go Boy";
+})
+
+// Functions
+// Title link
+function setFavicons(favImg) {
+    let headTitle = document.querySelector('head');
+    let setFavicon = document.createElement('link');
+    setFavicon.setAttribute('rel', 'shortcut icon');
+    setFavicon.setAttribute('href', favImg);
+    headTitle.appendChild(setFavicon);
+}
+
 function redBox() {
     boxColor.style.background = "#BD3F32";
     boxColor.style.borderRadius = "0%";
@@ -130,16 +141,3 @@ function greenBox() {
     goLang.style.filter = "opacity(1)";
     titleHTML.innerHTML = "Green";
 };
-
-
-
-// Golang PIC
-goLang.style.filter = "opacity(0)";
-
-// Go interactive
-go.addEventListener("click", () => {
-    headerTraffic.innerHTML = "You found a go-boy. Kandota zan";
-    go.style.width = "400px";
-    containerDiv.style.padding = "50px 20px";
-    titleHTML.innerHTML = "Go Boy";
-})
