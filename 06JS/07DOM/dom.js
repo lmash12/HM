@@ -10,8 +10,26 @@ const containerDiv = document.querySelector(".container__div"); // MAIN CONTAINE
 const titleHTML = document.querySelector(".title"); // TITLE
 const headerFour = document.getElementById("aSync"); // HEADER 4
 const inputNumber = document.getElementById('numberCount'); // INPUT NUMBER
+const switchBtn = document.querySelector(".toggleBtn"); // Toggle button for switch span and input number 
 
 
+// Switch Span and Input
+let listener = true;
+
+switchBtn.addEventListener('click', () => {
+
+    if (listener == true) {
+        num.style.display = "block";
+        inputNumber.style.display = "none";
+        switchBtn.innerHTML = "Switch to Input Number"
+        listener = false;
+    } else if (listener == false) {
+        num.style.display = "none";
+        inputNumber.style.display = "block";
+        switchBtn.innerHTML = "Switch to Span"
+        listener = true
+    }
+});
 
 // Interval Header
 headerFour.style.opacity = "0";
@@ -39,10 +57,10 @@ plus.addEventListener('click', () => {
     counter = (counter > 9) ? 1 : counter++;
 
     // WITH SPAN
-    // if (counter == 10) {
-    //     counter = 1;
-    // }
-    // num.innerHTML = counter;
+    if (counter == 10) {
+        counter = 1;
+    }
+    num.innerHTML = counter;
 
     // WITH INPUT  
     inputNumber.value = Number(counter);
@@ -55,10 +73,10 @@ minus.addEventListener('click', () => {
     counter = (counter <= 0) ? 9 : counter--;
 
     // WITH SPAN
-    // if (counter == 0 || counter < 0) {
-    //     counter = 9;
-    // }
-    // num.innerHTML = counter;
+    if (counter == 0 || counter < 0) {
+        counter = 9;
+    }
+    num.innerHTML = counter;
 
     // WITH INPUT
     inputNumber.value = counter;
@@ -141,6 +159,8 @@ function greenBox() {
     goLang.style.filter = "opacity(1)";
     titleHTML.innerHTML = "Green";
 };
+
+
 
 // TEST 
 
