@@ -111,19 +111,7 @@ goLang.style.filter = "opacity(0)";
 let goListener = true;
 
 go.addEventListener("click", () => {
-    if (goListener == true) {
-        goListener = false
-        headerTraffic.innerHTML = "You found a go-boy. <br>Kandota zan";
-        go.style.width = "400px";
-        containerDiv.style.padding = "50px 20px";
-        titleHTML.innerHTML = "Go Boy";
-    } else if (goListener == false) {
-        goListener = true;
-        goLang.style.filter = "opacity(0)";
-        go.style.width = "205px";
-        containerDiv.style.padding = "149px 20px";
-        headerTraffic.innerHTML = "Traffic Light";
-    }
+    goLangInteractive();
 })
 
 // Functions
@@ -171,6 +159,22 @@ function greenBox() {
     goLang.style.filter = "opacity(1)";
     titleHTML.innerHTML = "Green";
 };
+
+function goLangInteractive() {
+    if (goListener == true) {
+        goListener = false
+        headerTraffic.innerHTML = "You found a go-boy. <br>Kandota zan";
+        go.style.width = "400px";
+        containerDiv.style.padding = "50px 20px";
+        titleHTML.innerHTML = "Go Boy";
+    } else if (goListener == false) {
+        goListener = true;
+        goLang.style.filter = "opacity(0)";
+        go.style.width = "205px";
+        containerDiv.style.padding = "149px 20px";
+        headerTraffic.innerHTML = "Traffic Light";
+    }
+}
 
 
 
